@@ -14,13 +14,13 @@ let myHeading = document.querySelector('h1');
 
 function setUserName() {
   let myName = prompt('请输入你的名字。');
- /* if(!myname){
+  if(!myname){
   setUserName();
   }
-  else{ */
+  else{ 
   localStorage.setItem('name', myName);
   myHeading.textContent = 'A lovely dog，' + myName;
-  
+  }
 }
 
 if(!localStorage.getItem('name')) {
